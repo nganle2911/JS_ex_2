@@ -1,0 +1,118 @@
+/* General */
+* {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Anonymous Pro', monospace;
+    background-color: #FAF1E4;
+}
+
+.title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 0;
+    color: #435334;
+}
+
+.card {
+    margin: 20px 0;
+}
+
+.card .card-header {
+    color: #435334;
+    font-size: 25px;
+}
+
+.card .card-header i {
+    font-size: 23px;
+}
+
+/* .card-body .card-title {
+    margin-bottom: 15px;
+}
+
+.card-body .card-title span {
+    font-weight: bold;
+    color: #435334;
+} */
+
+.card-body .card-hint .collapse .collapseShow {
+    margin: 0 auto;
+}
+
+.card-body .card-hint a {
+    background-color: #435334;
+    border: 1px solid #435334;
+    transition: 0.3s;
+}
+
+.card-body .card-hint a:hover {
+    background-color: #9EB384;
+    border: 1px solid #9EB384;
+}
+
+.card-body .input-info .input-item {
+    padding-left: 0;
+}
+
+.card-body .input-item input {
+    border-radius: 5px;
+    border: 2px solid #D8D9DA;
+    width: 80%;
+}
+
+.card-body .input-item select {
+    width: 80%;
+}
+
+.card-body button {
+    background-color: #435334;
+    padding: 8px;
+    border: 1px solid #435334;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card-body button:hover, .card-body button:active {
+    background-color: #9EB384;
+    border: 1px solid #9EB384;
+}
+
+.card-footer h5 {
+    color: #435334;
+}
+
+.card-footer p {
+    color: #435334;
+    font-weight: bold;
+} 
+
+.card-footer p .output {
+    color: black;
+    font-weight: bold;
+}
+
+.card .card-body .input-info {
+    margin: 25px 0;
+}
+
+.ex1 .card-body .input-info {
+    width: 100%;
+}
+
+.ex2 .card-body .input-item label {
+    display: inline;
+}
+
+.ex4 .card-body .input-info  .input-item input {
+    width: 90%;
+}

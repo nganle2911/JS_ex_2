@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <!-- Font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <title>Exercises JavaScript - 2</title>
+    <!-- Adding favicon -->
+    <link rel="icon" href="images/icons8-source-code-96.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">homework - JavaScript 2</h2>
+        <!-- Exercise 1 -->
+        <div class="card ex1">
+            <div class="card-header">
+                <i class="fa fa-university"></i>
+                Exercise 1 - Enrollment Management
+            </div>
+            <div class="card-body">
+                <div class="card-hint">
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseInfo" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">
+                            <i class="fa fa-play"></i>
+                            Click for details!
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseInfo">
+                        <div class="card card-body collapseShow">
+                            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+                            user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
+                <div class="row input-info">
+                    <div class="input-item col-4">
+                        <input type="number" id="benchmark" name="benchmark" min="15" max="30" placeholder="Enter University Benchmarks">
+                    </div>
+                    <div class="input-item col-4">
+                        <select name="zone" id="zone">
+                            <option value="0">Select Your Zone</option>
+                            <option value="1">Zone A</option>
+                            <option value="2">Zone B</option>
+                            <option value="3">Zone C</option>
+                        </select>
+                    </div>
+                    <div class="input-item col-4">
+                        <select name="privilege" id="privilege">
+                            <option value="0">Select Your Privilege</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row input-info">
+                    <div class="input-item col-4">
+                        <input type="number" id="score1" name="score1" min="0" max="10" placeholder="Enter the 1st score">
+                    </div>
+                    <div class="input-item col-4">
+                        <input type="number" id="score2" name="score2" min="0" max="10" placeholder="Enter the 2nd score">
+                    </div>
+                    <div class="input-item col-4">
+                        <input type="number" id="score3" name="score3" min="0" max="10" placeholder="Enter the 3rd score">
+                    </div>
+                </div>
+                <button onclick="calculateScores()">Result</button>
+            </div>
+            <div class="card-footer">
+                <h5>Result</h5>
+                <p class="ex1-result">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span id="ex1-output" class="output"></span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Exercise 2 -->
+        <div class="card ex2">
+            <div class="card-header">
+                <i class="fa fa-money-check-alt"></i>
+                Exercise 2 - Electricity Bill
+            </div>
+            <div class="card-body">
+                <div class="card-hint">
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseInfo" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">
+                            <i class="fa fa-play"></i>
+                            Click for details!
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseInfo">
+                        <div class="card card-body collapseShow">
+                            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+                            user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
+                <div class="row input-info">
+                    <div class="input-item col-6">
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="input-item col-6">
+                        <input type="number" id="kWnum" placeholder="Enter kW number">
+                    </div>
+                </div>
+                <button onclick="calculateBill()">Calculate</button>
+            </div>
+            <div class="card-footer">
+                <h5>Result</h5>
+                <p class="ex2-result">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span id="ex2-output" class="output"></span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Exercise 3 -->
+        <div class="card ex3">
+            <div class="card-header">
+                <i class="fa fa-donate"></i>
+                Exercise 3 - Tax on Personal Income Calculation
+            </div>
+            <div class="card-body">
+                <div class="card-hint">
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseInfo" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">
+                            <i class="fa fa-play"></i>
+                            Click for details!
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseInfo">
+                        <div class="card card-body collapseShow">
+                            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+                            user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
+                <div class="row input-info">
+                    <div class="input-item col-4">
+                        <input type="text" id="nameTax" placeholder="Enter your name">
+                    </div>
+                    <div class="input-item col-4">
+                        <input type="number" id="income" placeholder="Enter your income">
+                    </div>
+                    <div class="input-item col-4">
+                        <input type="number" id="member" min="0" max="20" placeholder="Enter the number of independents">
+                    </div>
+                </div>
+                <button onclick="calculateTax()">Calculate</button>
+            </div>
+            <div class="card-footer">
+                <h5>Result</h5>
+                <p class="ex3-result">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span id="ex3-output" class="output"></span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Exercise 4 -->
+        <div class="card ex4">
+            <div class="card-header">
+                <i class="fa fa-tv"></i>
+                Exercise 4 - Cable Bill Calculation
+            </div>
+            <div class="card-body">
+                <div class="card-hint">
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseInfo" role="button" aria-expanded="false"
+                            aria-controls="collapseExample">
+                            <i class="fa fa-play"></i>
+                            Click for details!
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseInfo">
+                        <div class="card card-body collapseShow">
+                            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+                            user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
+                <div class="row input-info">
+                    <div class="input-item col-3">
+                        <select name="client" id="client" onChange="selectClient()">
+                            <option value="0">Select client type</option>
+                            <option value="1">Individual</option>
+                            <option value="2">Enterprise</option>
+                        </select>
+                    </div>
+                    <div class="input-item col-3">
+                        <input type="text" id="clientId" placeholder="Enter your client ID">
+                    </div>
+                    <div class="input-item col-3">
+                        <input type="number" id="channel" placeholder="Enter the number of channels">
+                    </div>
+                    <div class="input-item col-3">
+                        <input style="display: none;" type="number" id="connection" placeholder="Enter number of connections">
+                    </div>
+                </div>
+                <button onclick="calculateCable()">Calculate</button>
+            </div>
+            <div class="card-footer">
+                <h5>Result</h5>
+                <p class="ex4-result">
+                    <i class="fa fa-hand-point-right"></i>
+                    <span id="ex4-output" class="output"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="./js/index.js"></script>
+</body>
+</html>
